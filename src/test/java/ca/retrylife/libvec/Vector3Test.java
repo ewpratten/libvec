@@ -47,28 +47,28 @@ public class Vector3Test {
         assert d.z == a.z;
     }
 
-    /**
-     * Test Vector3 <-> Color conversions
-     */
-    @Test
-    public void vectorColorTest() {
+    // /**
+    //  * Test Vector3 <-> Color conversions
+    //  */
+    // @Test
+    // public void vectorColorTest() {
 
-        // Create a vector for the color blue
-        Vector3 blue = new Vector3(Color.BLUE);
+    //     // Create a vector for the color blue
+    //     Vector3 blue = new Vector3(Color.BLUE);
 
-        // Ensure the blue vector has the correct components
-        assert blue.x == 0;
-        assert blue.y == 0;
-        assert blue.z == 1;
+    //     // Ensure the blue vector has the correct components
+    //     assert blue.x == 0;
+    //     assert blue.y == 0;
+    //     assert blue.z == 1;
 
-        // Convert color vector back to a Color object
-        Color blue2 = blue.toColor();
+    //     // Convert color vector back to a Color object
+    //     Color blue2 = blue.toColor();
 
-        // Ensure blue2's components are correct
-        assert blue2.getRed() == 0;
-        assert blue2.getGreen() == 0;
-        assert blue2.getBlue() == 255;
+    //     // Ensure blue2's components are correct
+    //     assert blue2.getRed() == 0;
+    //     assert blue2.getGreen() == 0;
+    //     assert blue2.getBlue() == 255;
 
-    }
+    // }
 
 }

@@ -24,17 +24,6 @@ public class Vector3 {
     }
 
     /**
-     * Create a vector from a color.
-     * 
-     * This will convert RGB to XYZ components with ranges [0.0-1.0]
-     * 
-     * @param c Color
-     */
-    public Vector3(Color c) {
-        this(c.getRed() / 255, c.getGreen() / 255, c.getBlue() / 255);
-    }
-
-    /**
      * Copy constructor
      * 
      * @param other Copy source
@@ -57,21 +46,6 @@ public class Vector3 {
      */
     public Vector3() {
         this(0.0);
-    }
-
-    /**
-     * Get the vector as a color. All values are clamped and rounded
-     * 
-     * @return Color
-     */
-    public Color toColor() {
-
-        // Clamp, round, and cast each component to an RGB value
-        int r = (int) Math.round(VecUtil.clamp(x, 0, 1) * 255);
-        int g = (int) Math.round(VecUtil.clamp(y, 0, 1) * 255);
-        int b = (int) Math.round(VecUtil.clamp(z, 0, 1) * 255);
-
-        return new Color(r, g, b);
     }
 
     /**
@@ -107,11 +81,25 @@ public class Vector3 {
     }
 
     /**
+     * Clamp all components
+     * 
+     * @param min Lowest value
+     * @param max Highest value
+     */
+    public void clamp(double min, double max) {
+
+        x = VecUtil.clamp(x, min, max);
+        y = VecUtil.clamp(y, min, max);
+        z = VecUtil.clamp(z, min, max);
+    }
+
+    /**
      * Check equality with another vector3
+     * 
      * @param other Other vector
      * @return Is equal?
      */
-    public boolean equals(Vector3 other){
+    public boolean equals(Vector3 other) {
         return other.x == x && other.y == y && other.z == z;
     }
 
@@ -191,6 +179,5 @@ public class Vector3 {
     public static Vector3 mul(Vector3 a, double b) {
         return new Vector3(a.x * b, a.y * b, a.z * b);
     }
-    
 
 }
