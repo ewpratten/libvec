@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"ca.retrylife.libvec","l":"Vector3"},{"p":"ca.retrylife.libvec","l":"VecUtil"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"ca.retrylife.libvec","l":"Color3"},{"p":"ca.retrylife.libvec","l":"Point2"},{"p":"ca.retrylife.libvec","l":"Vector3"},{"p":"ca.retrylife.libvec","l":"VecUtil"}]
