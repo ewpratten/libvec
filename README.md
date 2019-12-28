@@ -2,15 +2,20 @@
 My simple vector math library
 
 ## Publishing
-To publish, your GitHub package credentials must be stored in the system environment.
+To publish, your GitHub package credentials must be stored in gradle's settings file:
 
-```sh
-export GITHUB_ACTOR=<username>
-export GITHUB_TOKEN=<token>
+```
+# ~/.gradle/gradle.properties
 
-./gradlew publish
+gh_user=<username>
+gh_packages_token=<token>
 ```
 
 The token can be generated from your [developer settings](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+
+With the settings set, run:
+```sh
+./gradlew publish
+```
 
 ## API docs
