@@ -1,4 +1,4 @@
-package ca.retrylife.libvec.adaptors;
+package ca.retrylife.libvec.adapters;
 
 import ca.retrylife.libvec.Vector3;
 
