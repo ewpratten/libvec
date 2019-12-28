@@ -1,4 +1,6 @@
-package ca.retrylife.libvec;
+package ca.retrylife.libvec.adaptors;
+
+import ca.retrylife.libvec.Vector3;
 
 /**
  * A replacement for javax.vecmath.Color3f (incomplete)
