@@ -19,3 +19,4 @@ With the settings set, run:
 ```
 
 ## API docs
+The API docs can be found [HERE](https://ewpratten.github.io/libvec/)

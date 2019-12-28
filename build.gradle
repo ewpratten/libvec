@@ -98,3 +98,10 @@ tasks.withType(Test) {
         }
     }
 }
+
+
+// Generate a javadoc
+javadoc{
+    source = "src/main/java"
+    destinationDir = reporting.file("docs")
+}
