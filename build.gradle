@@ -5,8 +5,6 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
 
-    // Apply maven plugin for publishing
-    id "maven-publish"
 
 }
 
@@ -27,24 +25,6 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter-api:5.4.2')
     testRuntime('org.junit.jupiter:junit-jupiter-engine:5.4.2')
     testCompile 'junit:junit:4.12'
-}
-
-publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/ewpratten/libvec")
-            credentials {
-                username = gh_user
-                password = gh_packages_token
-            }
-        }
-    }
-    publications {
-        gpr(MavenPublication) {
-            from(components.java)
-        }
-    }
 }
 
 
