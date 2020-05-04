@@ -1,4 +1,4 @@
-# libvec
+# libvec <br> [![](https://jitpack.io/v/ewpratten/libvec.svg)](https://jitpack.io/#ewpratten/libvec)
 My simple vector math library
 
 ## Publishing & installation
